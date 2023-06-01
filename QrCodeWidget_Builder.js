@@ -99,7 +99,7 @@ input[type="color"]::-webkit-color-swatch {
     <br>
 </form>
 `;
-    class QrCodeWidgetBuilderPanel extends HTMLElement {
+    class QrCodeWidgetBuilderPanel2 extends HTMLElement {
         constructor() {
             super();
             this._shadowRoot = this.attachShadow({
@@ -155,8 +155,5 @@ input[type="color"]::-webkit-color-swatch {
         }
 
     }
-    customElements.define(
-        "com-bmkhai-sap-qr-builder",
-        QrCodeWidgetBuilderPanel
-    );
+    customElements.define("com-bmkhai-sap-qr-builder", QrCodeWidgetBuilderPanel2);
 })();
